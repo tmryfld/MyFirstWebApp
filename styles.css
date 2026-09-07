@@ -1,0 +1,16 @@
+h1 {
+    background-color:#222222; 
+    color:#d8d8d8; 
+    font-family:Arial; 
+    text-align:center;
+}
+        
+p, ul, br {
+    font-family:Arial; 
+    color:#222222;
+}
+
+body {
+    background-color:#d8d8d8
+}
+
