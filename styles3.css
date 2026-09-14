@@ -1,0 +1,75 @@
+h1{
+    font-family:Arial;
+    color:#c23616;
+    font-weight:bold;
+}
+
+p, ul, br {
+    font-family:Arial; 
+    color:#222222;
+}
+
+img {
+    width:40%;
+}
+
+body {
+    background-color:#d8d8d8
+}
+
+.header-main{
+    background-color: #192a56;
+    font-family:Arial;
+    color: #f5f6fa;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 1rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    /* div alignment help - https://www.joshwcomeau.com/css/center-a-div/ */
+}
+
+.footer-main{
+    background-color: #192a56;
+    font-family:Arial;
+    color: #f5f6fa;
+    text-align: center;
+    font-size:smaller;
+    padding: 1rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+}
+
+.disclaimer{
+    font-size:x-small;
+    text-align: center;
+}
+
+/* unvisited link */
+a:link {
+  color: #c23616;
+}
+
+/* visited link */
+a:visited {
+  color: #c23616;
+}
+
+/* mouse over link */
+a:hover {
+  color: #192a56;
+}
+
+/* selected link */
+a:active {
+  color: #c23616;
+}
+
+.big-text{
+    font-size:larger;
+}
