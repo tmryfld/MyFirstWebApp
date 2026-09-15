@@ -10,11 +10,21 @@ p, ul, br {
 }
 
 img {
-    width:40%;
+    width:75%;
+    height:auto;
 }
 
 body {
     background-color: #f5f6fa;
+}
+
+.highlight {
+            padding: 2rem;
+            background-color: #dfdfdf;
+            border-left: 1rem solid #c23616;
+            border-radius: 1rem;
+            font-family:Arial;
+
 }
 
 .header-main{
