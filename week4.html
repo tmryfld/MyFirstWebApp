@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Webpage about photographer Martin Parr to demonstrate responsive HTML, CSS and accessibility techniques.">
+
+        <title>Week 3</title>
+        <link rel="stylesheet" href="styles4.css">
+    </head>
+    
+    <body>
+        <header>
+            <div class="header-main">
+                Week 3
+            </div>
+        </header>
+        
+        <main>
+            <div class="content-grid">
+                <article><h1>Martin Parr (23 May 1952 - 6 December 2025)</h1>
+                <p>Martin Parr (23 May 1952 - 6 December 2025) was an English documentary photographer. 
+                <br>He was known for his photographic projects that take an intimate, satirical and anthropological look at aspects of modern life, in particular documenting the social classes of England, and more broadly the wealth of the Western world.</p>
+                <p>Since 1994, Parr had been a member of Magnum Photos. He had around 60 solo photobooks published, and had featured in around 90 exhibitions worldwide, including the international touring exhibition ParrWorld, and a retrospective at the Barbican Arts Centre, London, in 2002.</p>
+                <p>Parr has said of his photography:</div>
+            
+            <div class="highlight">
+                <i>The fundamental thing I'm exploring constantly is the difference between the mythology of the place and the reality of it...Remember I make serious photographs disguised as entertainment. That's part of my mantra. I make the pictures acceptable to find the audience but deep down there is actually a lot going on that's not sharply written in your face. If you want to read it you can read it.</i></div>
+            
+            <div class="content-grid">
+                <p><center><img src="week3.jpg" alt="A photo of a man holding a cup of tea, on his right leg is a cake, balanced on his knee" title="Martin Parr - Real Food 2000"></center></p>
+            </div>
+
+            <div class="disclaimer">
+                <p>Content taken from <a href="https://en.wikipedia.org/wiki/Martin_Parr" target="_blank">Wikipedia</a>, to fill out the article space instead of placeholder text. Image courtesy of <a href="https://www.magnumphotos.com/arts-culture/society-arts-culture/martin-parrs-real-food/" target="_blank">Magnum Photos</a>.</p>
+                <p>&nbsp;</p>
+            </div>
+        </main>
+            
+        <footer>
+            <div class="mailing-list-form">
+                <form id="mailing-list">
+                    <center>Mailing List Sign Up<br><small>* required</small></center>
+                    <br><label for="title" class="mailing-list-form">Title *</label>
+                    <br><select id="title" name="title" required>
+                        <option value>Please select:</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Dr">Dr</option>
+                        <option value="Lord">Lord</option>
+                        <option value="Lady">Lady</option>
+                    </select>
+                    
+                    <p></p>
+                    <label for="first-name" class="mailing-list-form">First Name *</label>
+                    <br><input id="first-name" name="first-name" placeholder="Enter your first name" required>
+                    
+                    <p></p>
+                    <label for="last-name" class="mailing-list-form">Last Name *</label>
+                    <br><input id="last-name" name="last-name" placeholder="Enter your last name" required>
+                    
+                    <p></p>
+                    <label for="dob" class="mailing-list-form">Date of Birth</label>
+                    <br><input id="dob" name="dob" type="date">
+                    
+                    <p></p>
+                    <label for="email" class="mailing-list-form">Email *</label>
+                    <br><input id="email" name="email" type="email" placeholder="Enter your email address" required>
+                    
+                    <p></p>
+                    <small><label for="t-c" class="mailing-list-form">By ticking this box I understand that this form is purely for educational purposes only. <br>No data is stored or transmitted as part of this activity. <br>For full terms and conditions please click <a href="https://youtube.com/shorts/_6HzLIJPH2A?si=a6r6DligMBeWj6Gz" target=_blank>here</a>.</label></small>
+                    <br><input type="checkbox" id="t-c" name="t-c" value="Yes" required>
+                    
+                    <p></p>
+                    <button type="submit">Submit Form</button>&nbsp;&nbsp;&nbsp;<button type="reset" class="button-2">Reset Form</button>
+
+                    <center><p id="form-submit" class="form-submit"></p></center>
+
+                </form>
+            </div>
+
+            <p>&nbsp;</p>
+            <div class="footer-main">
+                &copy; 2026 Tom Rayfield
+            </div>
+
+        </footer>
+
+        <script>
+
+            const mailingList = document.getElementById("mailing-list");
+            const formSubmit = document.getElementById("form-submit");
+
+            mailingList.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const firstName = document.getElementById("first-name").value;
+
+                formSubmit.textContent =
+                    "Success! Thanks, " + firstName + " for joining the mailing list!";
+
+                formSubmit.style.display = "block";
+            });
+
+            mailingList.addEventListener("reset", function () {
+                formSubmit.textContent = "";
+                formSubmit.style.display = "none";
+            });
+        
+        </script>
+
+    </body>
+</html>
