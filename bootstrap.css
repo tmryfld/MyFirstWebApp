@@ -1,0 +1,16 @@
+:root {
+    --bs-primary:#186453;
+    --bs-primary-rgb:24, 100, 83;
+    --bs-secondary:#121212;
+    --bs-secondary-rgb:18, 18, 18;
+    --bs-body-bg:#2d3436;
+    --bs-body-bg-rgb:45, 52, 54;
+    --bs-link-color:#ffffff;
+    --bs-link-color-rgb:255, 255, 255;
+    --bs-link-hover-color:#1dd1a1; 
+    --bs-link-hover-color-rgb:29, 209, 161;
+}
+
+h1, h2 {
+    color: var(--bs-primary);
+}
